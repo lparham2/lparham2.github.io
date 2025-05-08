@@ -2,49 +2,94 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lilly Parham | Portfolio</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    /* Reset and Base Styles */
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f2f2f2;
       color: #333;
+      line-height: 1.6;
     }
+
+    a {
+      text-decoration: none;
+      color: #007acc;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Layout Containers */
     header, nav, main {
-      max-width: 900px;
+      max-width: 960px;
       margin: auto;
       padding: 20px;
     }
+
     nav {
       background-color: #fff;
       border-bottom: 1px solid #ddd;
+      display: flex;
+      gap: 20px;
       padding: 15px 20px;
     }
-    nav a {
-      margin-right: 20px;
-      text-decoration: none;
-      color: #007acc;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
+
+    /* About Section */
     .about {
       background-color: #fff;
       padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       gap: 30px;
+      margin-top: 20px;
     }
+
     .about img {
       width: 180px;
       height: 180px;
       border-radius: 50%;
       object-fit: cover;
-      border: 2px solid #007acc;
+      border: 3px solid #007acc;
+    }
+
+    .about div {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      color: #111;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      .about {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
@@ -60,17 +105,17 @@
 
   <main>
     <section class="about">
-      <img src="assets/headshot.jpg" alt="Lilly Parham Headshot">
+      <img src="assets/headshot.jpg" alt="Professional headshot of Lilly Parham">
       <div>
         <h1>Hello, I'm Lilly Parham</h1>
         <p>
-          Driven by a deep passion for data and its power to shape strategic decisions, I am currently pursuing a dual Master’s degree in Business Administration (MBA) and Analytics (MSA) at Georgia State University. My academic journey is rooted in a strong foundation in quantitative analysis, data science, and business strategy, empowering me to bridge the gap between technical expertise and business impact.
-          Throughout my professional experience—as a Graduate Research Assistant with the Southeast Regional Cooperative and through hands-on projects in data engineering, dashboard development, and AI-powered applications—I’ve leveraged tools like Python, SQL, Power BI, and machine learning to uncover trends, optimize operations, and support decision-making. Whether it’s streamlining supply chain logistics, analyzing consumer behavior, or deploying predictive models, I focus on transforming complex data into actionable business insights.
-          My work is guided by the belief that data isn't just about numbers—it's about creating smarter, more agile organizations that thrive in a rapidly evolving digital world.
+          I'm a dual MBA and MSA candidate at Georgia State University, passionate about leveraging data to drive strategic decisions. My expertise spans quantitative analysis, data science, and business strategy.
         </p>
         <p>
-          Welcome to my portfolio!
-          Explore my professional journey, featured projects, and technical work that showcase how I apply data, analytics, and business insight to solve real-world challenges.
+          From my role at the Southeast Regional Cooperative to various hands-on projects in data engineering and AI, I've used tools like Python, SQL, and Power BI to uncover insights, streamline logistics, and build smarter systems.
+        </p>
+        <p>
+          Welcome to my portfolio—explore how I apply analytics and technology to solve real-world problems.
         </p>
       </div>
     </section>
