@@ -6,82 +6,73 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
       color: #333;
-      line-height: 1.6;
     }
-    header {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    h1 {
-      font-size: 2.5rem;
-    }
-    section {
-      max-width: 800px;
+    header, nav, main {
+      max-width: 900px;
       margin: auto;
+      padding: 20px;
+    }
+    nav {
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      padding: 15px 20px;
+    }
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #007acc;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .about {
       background-color: #fff;
       padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-      margin-bottom: 40px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      display: flex;
+      align-items: center;
+      gap: 30px;
     }
-    h2 {
-      border-bottom: 2px solid #eee;
-      padding-bottom: 10px;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
+    .about img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #007acc;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Lilly Parham</h1>
-    <p>Graduate Student • Data & Tech Enthusiast</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume & Experience</a>
+      <a href="projects.html">Projects</a>
+    </nav>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I'm a dual-degree Master's student in Analytics and Business Administration at Georgia State University. 
-      I’m passionate about using data, technology, and storytelling to drive meaningful change in industries ranging from food security to education and logistics.
-    </p>
-  </section>
-
-  <section id="projects">
-    <h2>Featured Projects</h2>
-    <ul>
-      <li>
-        <strong>Fusionware Data Cleaning:</strong>
-        <a href="https://github.com/lparham2/fusionware-cleaning" target="_blank">View on GitHub</a>
-      </li>
-      <li>
-        <strong>EV Infrastructure Analysis:</strong>
-        <a href="projects/ev-infrastructure-analysis.pdf" target="_blank">Download PDF</a>
-      </li>
-      <li>
-        <strong>AI-Powered Education Assistant:</strong>
-        <a href="https://github.com/lparham2/ai-education-assistant" target="_blank">View on GitHub</a>
-      </li>
-    </ul>
-  </section>
-
-  <section id="resume">
-    <h2>Resume</h2>
-    <p>
-      <a href="projects/Lilly_Parham_Resume.pdf" target="_blank">Download Resume (PDF)</a>
-    </p>
-  </section>
+  <main>
+    <section class="about">
+      <img src="assets/headshot.jpg" alt="Lilly Parham Headshot">
+      <div>
+        <h1>Hello, I'm Lilly Parham</h1>
+        <p>
+          I'm a dual-degree Master's student in Analytics and Business Administration at Georgia State University. 
+          My passion lies at the intersection of data, technology, and impact — whether it's optimizing food systems, analyzing transportation trends, or building AI tools for education.
+        </p>
+        <p>
+          Welcome to my portfolio — here you’ll find my professional experience, featured projects, and technical work.
+        </p>
+      </div>
+    </section>
+  </main>
 
 </body>
 </html>
